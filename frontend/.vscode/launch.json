@@ -1,0 +1,31 @@
+{
+    "compounds": [
+        {
+            "name": "Frontend+grapqhl",
+            "configurations": [
+                "Graphql",
+                "Start"
+            ]
+        }
+    ],
+    "configurations": [
+        {
+            "command": "yarn start",
+            "name": "Start",
+            "request": "launch",
+            "type": "node-terminal"
+        },
+        {
+            "command": "yarn storybook",
+            "name": "Storybook",
+            "request": "launch",
+            "type": "node-terminal"
+        },
+        {
+            "command": "yarn graphql-faker",
+            "name": "Graphql",
+            "request": "launch",
+            "type": "node-terminal"
+        },
+    ]
+}

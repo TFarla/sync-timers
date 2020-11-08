@@ -1,0 +1,16 @@
+type User {
+  id: ID,
+  name:String @fake(type: fullName)
+}
+
+type Timer {
+  id: ID,
+  members:[User!],
+  duration: Int @fake(type:number)
+}
+
+type Query {
+  user(id: ID): User
+  timer(id: ID): Timer
+  allTimers: [Timer!]
+}
